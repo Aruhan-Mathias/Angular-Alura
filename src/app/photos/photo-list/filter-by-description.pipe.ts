@@ -7,6 +7,7 @@ import { PhotosInterface } from 'src/app/models/photos.interface';
 export class FilterByDescription implements PipeTransform{
     
     transform(photos: PhotosInterface[], descriptionQuery: string) {
+
         descriptionQuery = descriptionQuery.trim().toLowerCase()
 
         if(descriptionQuery) {
@@ -18,6 +19,7 @@ export class FilterByDescription implements PipeTransform{
         } else {
             return photos
         }
+        
     }
 
 }

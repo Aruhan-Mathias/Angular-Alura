@@ -14,6 +14,4 @@ import { PhotoListModel } from './photo-list/photo-list.module';
     ],
 })
 
-export class PhotosModule {
-
-}
+export class PhotosModule { }
